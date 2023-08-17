@@ -37,4 +37,9 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  --i = {
+  --  ["<C-j>"] = {
+  --    "copilot#Accept(<cr>)", silent = true, expr = true, script = true
+  --  },
+  --},
 }
