@@ -9,7 +9,7 @@ local opt = {
     wrap = false, -- sets vim.opt.wrap
 }
 
-if vim.fn.has("win32") then
+if vim.fn.has("win32") == 1 then
   opt.shell = "pwsh"
   opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
   opt.shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait"
