@@ -52,6 +52,26 @@ return {
     servers = {
       -- "pyright"
     },
+    config = {
+      rust_analyzer = {
+        settings = {
+          ["rust-analyzer"] = {
+            check = {
+              command = "clippy",
+            }
+          }
+        }
+      },
+      -- asm_lsp = {
+      --   settings = {
+      --     ["asm-lsp"] = {
+      --       filetypes = {
+      --         "asm", "vmasm", "s"
+      --       }
+      --     }
+      --   }
+      -- }
+    },
   },
 
   -- Configure require("lazy").setup() options
